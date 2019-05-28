@@ -3,14 +3,12 @@ export default {
     {
       id: "div-1",
       path: "/19968336/header-bid-tag-1",
-      //sizes: [[728, 90], [970, 90]],
-      sizes: [[320, 250]],
+      sizes: [[728, 90], [970, 90]],
       prebid: [
         {
           mediaTypes: {
             banner: {
-              sizes: [[320, 250]]
-              //sizes: [[728, 90], [970, 90]]
+              sizes: [[728, 90], [970, 90]]
             }
           },
           bids: [
@@ -24,5 +22,8 @@ export default {
         }
       ]
     }
-  ]
+  ],
+  prebid: {
+    bidderTimeout: 5000
+  }
 };

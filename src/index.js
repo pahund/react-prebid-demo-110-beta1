@@ -3,4 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 
-//ReactDOM.render(<App />, document.getElementById('root'));
+if (window.useReactPrebid) {
+  ReactDOM.render(<App />, document.getElementById('root'));
+} else {
+  console.info('React app disabled');
+}
