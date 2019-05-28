@@ -22,8 +22,5 @@ export default {
         }
       ]
     }
-  ],
-  prebid: {
-    bidderTimeout: 5000
-  }
+  ]
 };
